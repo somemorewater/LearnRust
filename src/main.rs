@@ -91,4 +91,42 @@ fn main() {
     println!("Codes in Rust: {}", tuff && not_tuff); // Logical AND
     println!("Codes in Rust: {}", tuff || not_tuff); // Logical OR
     println!("Codes in Rust: {}", !tuff); // Logical NOT
+
+    // Boolean
+    let is_rust_fun: bool = true;
+    println!("Is Rust fun? {}", is_rust_fun);
+
+    // Conditional statements
+    // if statement
+    let number = 10;
+    if number > 5 {
+        println!("Number is greater than 5");
+    }
+
+    // if-else statement
+    let age = 18;
+    if age >= 18 {
+        println!("You are an adult");
+    } else {
+        println!("You are a minor");
+    }
+
+    // if-else if-else statement
+    let score = 85;
+    if score >= 90 {
+        println!("Grade: A");
+    } else if score >= 80 {
+        println!("Grade: B");
+    } else if score >= 70 {
+        println!("Grade: C");
+    } else if score >= 60 {
+        println!("Grade: D");
+    } else {
+        println!("Grade: F");
+    }
+
+    // is as an expression
+    let value = 10;
+    let result = if value > 5 { "Greater than 5" } else { "5 or less" };
+    println!("Result: {}", result);
 }
