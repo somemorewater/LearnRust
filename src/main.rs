@@ -238,4 +238,9 @@ fn main() {
 
     println!("{}", d);
 
+    // Data structure 
+    let numbers = [1, 2, 3, 4, 5];
+
+    println!("The first number is: {}", numbers[0]);
+
 }
