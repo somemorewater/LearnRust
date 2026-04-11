@@ -293,4 +293,12 @@ fn main() {
     println!("Age: {}", person.1);
     println!("Is active: {}", person.2);
 
+    // Unpacking a tuple 
+    let person = ("Jenny", 45, false);
+    let (name, age, active) = person;
+
+    println!("Name: {}", name);
+    println!("Age: {}", age);
+    println!("Active: {}", active);
+
 }
