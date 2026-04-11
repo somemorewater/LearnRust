@@ -129,4 +129,113 @@ fn main() {
     let value = 10;
     let result = if value > 5 { "Greater than 5" } else { "5 or less" };
     println!("Result: {}", result);
+
+    // Match
+    let day = 3;
+    match day {
+        1 => println!("Monday"),
+        2 => println!("Tuesday"),
+        3 => println!("Wednesday"),
+        4 => println!("Thursday"),
+        5 => println!("Friday"),
+        6 => println!("Saturday"),
+        7 => println!("Sunday"),
+        _ => println!("Invalid day"),
+    }
+
+    // Multiple Matches
+    let number = 2;
+    match number {
+        1 | 3 | 5 | 7 | 9 => println!("Odd number"),
+        2 | 4 | 6 | 8 | 10 => println!("Even number"),
+        _ => println!("Not between 1 and 10"),
+    }
+
+    //loop
+
+    loop {
+        println!("This will loop forever!");
+        break; // To prevent infinite loop
+    }
+
+    // While loop
+    let mut count = 0;
+    while count < 5 {
+        println!("Count: {}", count);
+        count += 1;
+    }
+
+    // for loop
+    for i in 0..5 {
+        println!("Index: {}", i);
+    }
+
+    // Break and continue
+    for i in 0..10 {
+        if i == 3 {
+            continue; // Skip the rest of the loop when i is 3
+        }
+        if i == 5 {
+            break;
+        }
+        println!("Index: {}", i);
+    }
+
+    // Functions
+    fn hello() {
+        println!("Hello World");
+    }
+
+    hello();
+
+    // Function with return value
+    fn add(a: i32, b: i32) -> i32 { 
+        return a + b
+    }
+
+    let sum = add(5, 3);
+    println!("Sum: {}", sum);
+
+    // Strings
+    let greeting: &str = "Hello, Rust!";
+    println!("{}", greeting);
+
+    // Change a string
+    let mut mutable_greeting = String::from("Hello, Rust!");
+    mutable_greeting.push_str(" Welcome to programming.");
+    println!("{}", mutable_greeting);
+
+    // push() to add one char
+    let mut word = String::from("Hi");
+    word.push('!');
+    println!("{}", word); 
+
+    // Concatenate Strings
+    let s1 = String::from("Hello");
+    let s2 = String::from("World");
+    let result = format!("{} {}", s1, s2);
+    println!("{}", result);
+
+    let s3 = String::from("!");
+    let result = s1 + " " + &s2 + " " + &s3;
+    println!("{}", result);
+
+    // String length
+    let name = String::from("Rust");
+    println!("Length: {}", name.len());
+
+    // Borrowing and references
+    let a = String::from("Hello");
+    let b = &a;
+
+    println!("a = {}", a);
+    println!("b = {}", b);
+
+    // Mutable references
+    let mut c = String::from("John");
+    let d = &mut c;
+    d.push_str(" Doe");
+
+    println!("{}", d);
+
 }
