@@ -239,8 +239,16 @@ fn main() {
     println!("{}", d);
 
     // Data structure 
+
+    // Arrays
     let numbers = [1, 2, 3, 4, 5];
 
     println!("The first number is: {}", numbers[0]);
+
+    // Changing array values 
+    let mut times = [1, 2, 3, 4, 5];
+
+    times[0] = 10;
+    println!("The first number is: {}", times[0]);
 
 }
