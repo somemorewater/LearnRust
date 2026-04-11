@@ -264,4 +264,8 @@ fn main() {
     let numbers = [1, 2, 3, 4, 5];
     println!("{:?}", numbers);
 
+    // Vectors 
+    let fruits = vec!["apple", "banana", "orange"];
+    println!("First fruit: {}", fruits[0]);
+
 }
