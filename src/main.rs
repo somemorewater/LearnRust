@@ -268,4 +268,9 @@ fn main() {
     let fruits = vec!["apple", "banana", "orange"];
     println!("First fruit: {}", fruits[0]);
 
+    // Add element to a vector 
+    let mut fruits = vec!["apple", "banana"];
+    fruits.push("cherry");
+    println!("{:?}", fruits);
+
 }
