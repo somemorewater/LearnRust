@@ -273,4 +273,9 @@ fn main() {
     fruits.push("cherry");
     println!("{:?}", fruits);
 
+    // Remove the last element of a vector 
+    let mut fruits = vec!["apple", "banana", "cherry"];
+    fruits.pop();
+    println!("{:?}", fruits);
+
 }
