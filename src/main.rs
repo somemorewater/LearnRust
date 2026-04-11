@@ -251,4 +251,13 @@ fn main() {
     times[0] = 10;
     println!("The first number is: {}", times[0]);
 
+    // Array length 
+    println!("The number of numbers in times are: {}", times.len());
+
+    // Loop through array 
+    let fruits = ["apple", "banana", "orange"];
+    for fruit in fruits {
+       println!("I like {}.", fruit);
+    }
+
 }
