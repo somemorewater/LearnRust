@@ -260,4 +260,8 @@ fn main() {
        println!("I like {}.", fruit);
     }
 
+    // Print an entire array
+    let numbers = [1, 2, 3, 4, 5];
+    println!("{:?}", numbers);
+
 }
