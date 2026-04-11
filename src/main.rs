@@ -278,4 +278,13 @@ fn main() {
     fruits.pop();
     println!("{:?}", fruits);
 
+    // Add or remove element at specific index from a vector 
+    let mut fruits = vec!["banana", "orange"];
+    fruits.insert(0, "apple");
+    println!("{:?}", fruits);
+
+    let mut fruits = vec!["banana", "orange"];
+    fruits.remove(0);
+    println!("{:?}", fruits);
+
 }
