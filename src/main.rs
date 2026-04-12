@@ -301,4 +301,59 @@ fn main() {
     println!("Age: {}", age);
     println!("Active: {}", active);
 
+    // HashMaps
+    use std::collections::HashMap;
+
+    let mut capital_cities = HashMap::new();
+
+  // Add keys and values (Country, City)
+    capital_cities.insert("England", "London");
+    capital_cities.insert("Germany", "Berlin");
+    capital_cities.insert("Norway", "Oslo");
+
+    println!("{:?}", capital_cities);
+
+    // Access a value using its key
+    if let Some(city) = capital_cities.get("Germany") {
+    println!("The capital of Germany is: {}", city);
+    } else {
+    println!("Key not found");
+    }
+
+    // Structs
+    struct Person {
+    name: String,
+    age: u32,
+    can_vote: bool,
+    }
+
+    // Create a Person object
+    let user = Person {
+    name: String::from("John"),
+    age: 35,
+        can_vote: true,
+    };
+
+    println!("Name: {}", user.name);
+    println!("Age: {}", user.age);
+    println!("Can vote? {}", user.can_vote);
+
+    // Enums
+    enum Direction {
+    Up,
+    Down,
+    Left,
+    Right,
+    }
+
+    let my_direction = Direction::Up;
+    println!("We are going up!");
+
+    // Match on enum values
+    match my_direction {
+        Direction::Up => println!("Going up"),
+        Direction::Down => println!("Going down"),
+        Direction::Left => println!("Going left"),
+        Direction::Right => println!("Going right"),
+  }
 }
